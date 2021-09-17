@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Start"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/white"
+                android:backgroundTint="#4CAF50"
+                />
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/backcolor"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDelet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+        <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Activity Name"
+        android:textColor="#4A4A4A"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_content_cell_bg"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Threshold :"
+        android:textSize="16dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <EditText
+        android:id="@+id/edttxtThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="20dp"
+        android:hint="Enter Threshold"
+        android:inputType="numberSigned|numberDecimal"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication Factor(Below TH) :"
+        android:textSize="16dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <EditText
+        android:id="@+id/edttxtMulFactBelow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="20dp"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Enter Multiplication Factor (Below TH)"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication Factor(Above TH) :"
+        android:textSize="16dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <EditText
+        android:id="@+id/edttxtMulFactAbv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="20dp"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="Enter Multiplication Factor(Above TH) "
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="10dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Time Spent On Activity"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:textColor="#575757"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/table_content_cell_bg"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtDailyTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:background="#4BBAEC"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            />
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#8A8989"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

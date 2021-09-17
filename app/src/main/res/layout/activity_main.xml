@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/backcolor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/textviewActivityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Name"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/table_content_cell_bg"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_content_cell_bg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Activities Duration :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+        <TextView
+            android:id="@+id/txtTotalActivitesDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/table_content_cell_bg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Activity Duration :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+            <TextView
+                android:id="@+id/txtviewTotalActivityDuration"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="00:00:00"
+                android:paddingStart="5dp"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/table_content_cell_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Daily Activity Duration :"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+            <TextView
+                android:id="@+id/txtviewActivityDuration"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="00:00:00"
+                android:textSize="18dp"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_content_cell_bg"
+
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Points Accumulated :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+        <TextView
+            android:id="@+id/txtpoints"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="00"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingStart="5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/table_content_cell_bg"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Threshold :"
+                android:textSize="18dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+            <TextView
+                android:id="@+id/txtthreshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="18dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                android:paddingStart="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_content_cell_bg"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MF Below TH:"
+            android:textSize="18dp"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+        <TextView
+            android:id="@+id/txtmfbelow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_content_cell_bg"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MF Above TH:"
+            android:textSize="18dp"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+        <TextView
+            android:id="@+id/txtmfabove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnActivityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Add Activity"
+        android:textColor="@color/white"
+        />
+        <Button
+            android:id="@+id/btnshowRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#757575"
+            android:text="Show Records"
+            android:textColor="@color/white"
+            />
+
+    <com.clock.timeutilization.NonScrollListView
+        android:id="@+id/list_activites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="8dp"
+        />
+
+    </LinearLayout>
+</ScrollView>
